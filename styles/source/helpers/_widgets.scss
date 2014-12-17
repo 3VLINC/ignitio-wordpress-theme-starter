@@ -1,0 +1,12 @@
+.widget-area {
+
+	@extend .no-bullet;
+	margin-left:0 !important;	
+
+	.widget {
+		
+		margin-bottom:$theme-normal-spacing;
+
+	}
+
+}

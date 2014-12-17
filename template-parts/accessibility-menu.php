@@ -1,0 +1,1 @@
+<?php Theme\Accessibility::outputAccessibilityMenu(); ?>

@@ -1,0 +1,19 @@
+.one-col {
+	
+	@include grid-row();
+
+	margin-bottom:$theme-normal-spacing;
+
+	.primary-area {
+
+		@include grid-column($columns:12);
+
+	}
+
+	.secondary-area {
+			
+		display:none;
+		
+	}
+
+}

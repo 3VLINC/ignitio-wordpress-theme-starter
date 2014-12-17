@@ -1,0 +1,49 @@
+ // Allows the use of rem-calc() or lower-bound() in your settings
+ @import "foundation/functions";
+
+ // Colors
+$theme-primary-color: #7f0101; 
+
+$theme-secondary-color: #e9a718;
+
+$theme-tertiary-color: #999;
+
+$theme-subtle-color:#121212;
+
+$theme-base-color: #fff;
+
+$theme-base-inverse-color:#000;
+
+$theme-primary-font: Arial, Helvetica, sans-serif; 
+
+$theme-secondary-font: "Times New Roman", Times, serif;
+
+$theme-base-font-size:18px; // Defined in pixels
+
+$theme-font-size-extremely-large: $theme-base-font-size*2;
+
+$theme-font-size-very-large: $theme-base-font-size*1.5;
+
+$theme-font-size-large:$theme-base-font-size*1.25;
+
+$theme-font-size-normal:$theme-base-font-size;
+
+$theme-font-size-small:$theme-base-font-size*0.75;
+
+$theme-font-size-very-small:$theme-base-font-size*0.65;
+
+$theme-primary-menu-num-items:5; // Number of items allowed to show in the primary menu
+
+$theme-side-nav-link-padding:rem-calc(2 0); // Default amount of padding applied to side-nav items
+
+$theme-row-width:1215px;
+
+$theme-extra-large-spacing:80px;
+
+$theme-large-spacing:40px;
+
+$theme-normal-spacing:20px;
+
+$theme-small-spacing:10px;
+
+$theme-extra-small-spacing:5px;

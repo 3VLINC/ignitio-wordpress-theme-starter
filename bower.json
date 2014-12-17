@@ -1,0 +1,22 @@
+{
+  "name": "WhyHorror",
+  "version": "1.0",
+  "private": true,
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "respond": ">= 1.4.2"
+  },
+  "authors": [
+    "Dan Imbrogno <dan@3vl.ca>"
+  ],
+  "description": "WhyHorror WordPress Theme",
+  "main": "scripts/source/theme.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

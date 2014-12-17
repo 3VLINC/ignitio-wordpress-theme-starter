@@ -1,0 +1,51 @@
+.template--home {
+		
+	@extend .two-col-wider;
+	
+	.content--title{
+		font-family: $theme-secondary-font;
+		font-size: $theme-font-size-normal;
+		margin-bottom: 0;
+	}
+		
+	.content--meta{
+		font-family: $theme-secondary-font;
+		font-size: $theme-font-size-normal;
+		font-style: normal;
+		line-height: 1;
+
+	}
+	
+	@media #{$medium-up} {
+		
+		.content--thumbnail--container{
+			padding: $theme-normal-spacing 0;
+		}
+
+	}
+	
+	.widget--title{
+	}
+	
+	.tagcloud a{
+		font-size: $theme-font-size-normal !important;
+	}
+	
+	.widget{
+		
+		ul{
+			margin-left: 0;
+			
+			.cat-item{
+				list-style: none;
+				
+			}
+		}
+
+	}
+	
+	.widget-area .widget_search #searchsubmit{
+		padding: 10px 0;
+	}
+
+}

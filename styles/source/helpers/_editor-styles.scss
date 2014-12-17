@@ -1,0 +1,245 @@
+// Wordpress wysiwyg styles
+.content--entry
+{
+	
+	font-size:rem-calc(14);
+
+	p {
+		font-size: inherit;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	blockquote {
+		border: 0;
+		margin: 0;
+		font-style: italic;
+
+		p{
+			color: inherit;
+		}
+
+	}
+
+	ul, ol {
+		font-size:inherit;
+	}
+	
+	a{
+		text-decoration: underline;
+	} 
+
+	h1 {
+
+	}
+
+	h2 {
+	
+	}
+
+	h3 {
+
+	}
+
+	h4 {
+
+	}
+
+	h5 {
+
+	}
+
+	h6 {
+
+	}
+
+	//Wordpress Images
+
+	.alignleft, img.alignleft,
+	.alignright, img.alignright,
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto;
+		display: block; 
+		clear: both;
+		text-align: center;
+	}
+
+	.alignleft, img.alignleft{
+		float: left;
+		padding: 0 1rem 1rem 0;
+	}
+
+	.alignright, img.alignright{
+		float: right;
+		padding: 0 0 1rem 1rem;
+	}
+
+	.aligncenter, img.aligncenter{
+		float: none;
+		padding: 0 0 1rem 0;
+	}
+
+	@media #{$small-only} { 
+
+		// on mobile make all images aligned center
+		.alignright, img.alignright,
+		.alignleft, img.alignleft{
+			float:none;
+			padding:1rem 0;
+		}
+
+	}
+
+	.wp-caption {
+		
+		max-width: 100% !important;
+
+		img {
+			max-width: 100% !important;
+			height: auto;
+		}
+
+	}
+							
+	.wp-caption-text {
+		font-style: italic;
+		font-size: rem-calc(14);
+		text-align: center;
+		padding-top: 0.3rem;
+		margin:0;
+	}
+
+	// Galleries
+	
+	.gallery {
+
+		@include clearfix();
+
+		.gallery-item {
+				
+			padding:rem-calc(10);
+
+		}
+
+		a {
+			
+			display: block;
+
+		}
+
+		img {
+			display: block;
+			margin:0 auto;
+		}
+
+		@media #{$medium-up} { 
+
+			.gallery-item {
+			
+				float:left;
+			
+			}
+
+
+			&.gallery-columns-1 {
+				
+				.gallery-item {
+					
+					width:100%;
+
+				} 
+
+			}
+
+			&.gallery-columns-2 {
+					
+				.gallery-item {
+							
+					width:50%;
+				
+				}
+
+			}
+
+			&.gallery-columns-3 {
+				
+				.gallery-item {
+					
+					width:33%;
+
+				}
+
+			}
+
+			&.gallery-columns-4 {
+				
+				.gallery-item {
+					
+					width:25%;
+
+				}
+
+			}
+
+			&.gallery-columns-5 {
+				
+				.gallery-item {
+					
+					width:20%;
+
+				}
+
+			}
+
+			&.gallery-columns-6 {
+				
+				.gallery-item {
+					
+					width:16.6667%;
+
+				}
+
+			}
+
+			&.gallery-columns-7 {
+				
+				.gallery-item {
+					
+					width:14.285714286%;
+
+				}
+
+			}
+
+			&.gallery-columns-8 {
+				
+				.gallery-item {
+					
+					width:12.5%;
+
+				}
+
+			}
+
+			&.gallery-columns-9 {
+				
+				.gallery-item {
+					
+					width:11.111%;
+
+				}
+
+			}
+
+		}		
+
+	}
+
+}

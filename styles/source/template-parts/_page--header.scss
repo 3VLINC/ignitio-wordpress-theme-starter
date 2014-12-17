@@ -1,0 +1,111 @@
+// Header Configuration	
+
+.page--header {
+	
+}
+
+.page--header .page--header--top-bar {
+
+	margin:0 auto;
+
+	// Fix for top bar menu icon not toggling
+	&.expanded .toggle-topbar a span::after,
+	&.expanded .toggle-topbar a:hover span::after
+	{
+
+			box-shadow: 0 0px 0 1px $topbar-menu-icon-color-toggled,
+	                  0 7px 0 1px $topbar-menu-icon-color-toggled,
+			          0 14px 0 1px $topbar-menu-icon-color-toggled;
+	}
+
+}
+
+.page--header--logo {
+
+	.logo {
+		
+		margin-top:10px;
+		@include retina-sprite(logo, sprites);
+
+	}
+
+	.logo--text {
+		
+		@include sr-only();
+
+	}
+
+}
+
+.page--header--navigation {
+
+	// make right aligned menu have left aligned dropdown items
+	@media #{$topbar-media-query}
+	{
+		.right li .dropdown {
+			left:0;
+			right:auto;
+		}
+	}
+
+	@media #{$medium-up} {
+		.dropdown li {
+			&:not(.has-form) {
+		     
+		            a:not(.button) {
+
+						line-height:45px;
+
+		            }
+
+		    }
+		}
+	}
+
+	@media #{$small-only} {
+
+		ul li > a {
+			padding:$theme-small-spacing;
+		}
+
+	}
+
+
+	.dropdown li.parent-link a {
+
+		color:darken($theme-base-inverse-color, 50%);
+
+		&:hover {
+			color:darken($theme-base-inverse-color, 50%);
+		}
+
+	}
+
+	.title h5 {
+
+		font-family:$theme-secondary-font;
+
+		// back button
+		a:before {
+			content:'\00ab\00a0';
+		}
+
+	}
+
+	.divider {
+
+		@extend .hide-for-medium-up;
+
+	}
+
+}
+
+body.home .main {
+	margin-top:0;
+}
+
+.main {
+
+	margin:$theme-normal-spacing 0;
+
+}

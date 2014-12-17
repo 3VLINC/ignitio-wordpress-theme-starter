@@ -1,0 +1,23 @@
+.page--title--container {
+
+	@include grid-row();
+
+}
+
+.page--title--wrapper {
+
+	@include grid-column($columns:8, $last-column: true);
+
+}
+
+.page--title {
+	font-size: $theme-font-size-extremely-large;
+	margin:0;
+	margin-bottom:$theme-normal-spacing;
+}
+
+.page--title--qualifier {
+	display: block;
+	text-transform: uppercase;
+	font-size: $theme-font-size-very-large;
+}

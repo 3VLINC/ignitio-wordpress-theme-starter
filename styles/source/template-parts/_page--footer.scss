@@ -1,0 +1,103 @@
+.page-footer {
+
+	.widget-area--footer  {
+
+		@include grid-row();
+
+		margin-bottom:$theme-normal-spacing;
+
+		.widget-area {
+		
+			@media #{$small-only} {
+
+				@include grid-column($columns:12);
+				
+			}
+			
+			@media #{$medium-up} {
+				
+				@include grid-column($columns:6);
+				
+			}
+
+		}
+
+		.contact-us {
+
+			@media #{$small-only} {
+
+				@include grid-column($columns:12);
+				
+			}
+			
+			@media #{$medium-up} {
+				
+				@include grid-column($columns:6);
+				
+			}
+
+		}
+
+	}
+
+	.contact-us {
+
+	}
+
+
+	.follow-us {
+		
+		margin:0;
+		@extend .no-bullet;
+		@extend .clearfix;
+
+	}
+
+	.follow-us--link {
+		
+		float:left;
+		display: block;
+		margin-right:$theme-normal-spacing;
+		
+		span {
+			@include sr-only();
+		}
+
+	}
+
+	.follow-us--link--facebook {
+		// compensate for facebook logo is a bit thinner
+		margin-right: $theme-normal-spacing - 4px; 
+	}
+
+	.follow-us--link--facebook a {
+		
+		@include retina-sprite(icon-facebook, sprites);
+
+	}
+
+	.follow-us--link--twitter a {
+		
+		@include retina-sprite(icon-twitter, sprites);
+
+	}
+
+	.copyright {
+
+		@include grid-row();
+
+		p {
+
+			@include grid-column($columns:12);
+
+			font-size: $theme-font-size-very-small;
+			text-align: left;
+			margin: 0px;
+
+		}
+
+	}
+
+	padding-bottom:$theme-normal-spacing;
+
+}

@@ -1,0 +1,20 @@
+.pagination{
+	margin-bottom: $theme-normal-spacing;
+	overflow: auto;
+}
+
+.pagination > div{
+
+	a{
+		color: $theme-secondary-color;
+		font-size: $theme-font-size-small;
+	}	
+}
+
+.nav-previous{
+	float: left;
+}
+
+.nav-next{
+	float: right;
+}

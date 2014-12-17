@@ -1,0 +1,90 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+//
+// FOUNDATION SETTINGS
+//
+
+// Allows the use of rem-calc() or lower-bound() in your settings
+@import "foundation/functions";
+
+$base-font-size: $theme-base-font-size;
+
+$rem-base: $base-font-size;
+
+// Grid
+
+	$row-width: $theme-row-width;
+
+// Global
+
+	$body-font-color: $theme-base-inverse-color;
+
+	$body-font-family: $theme-primary-font;
+
+	$body-bg: $theme-base-color;
+
+// TYPOGRAPHY
+
+	$header-top-margin: 0; // Prefer heading to have only bottom margins
+
+	$header-font-family: $theme-primary-font;
+
+	$header-font-color: $theme-base-inverse-color;
+
+	$anchor-font-color-hover: $theme-primary-color;
+
+	$anchor-font-color:$theme-primary-color;
+
+
+// REVEAL
+
+	$reveal-overlay-bg: rgba($theme-base-color, .90);
+	
+// TOP BAR
+		
+	$topbar-bg-color: $theme-base-color;
+	
+	$topbar-dropdown-link-bg: transparent;
+	
+	$topbar-link-color: $theme-base-inverse-color;
+
+	$topbar-link-color-hover: $theme-primary-color;
+	
+	$topbar-link-bg: transparent;
+
+	$topbar-link-padding:12px;
+
+	$topbar-link-dropdown-padding:12px;
+
+	$topbar-link-font-family: $theme-secondary-font;
+
+	$topbar-link-font-size:rem-calc(16);
+	
+	$topbar-height:75px;
+
+	$topbar-arrows: false;
+
+	$topbar-breakpoint: 750px;
+
+	$topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
+
+	$topbar-dropdown-bg: $theme-base-color;
+		
+	$topbar-link-bg-hover: transparent;
+
+	$topbar-menu-link-color-toggled:$theme-secondary-color;
+
+	$topbar-menu-icon-color-toggled:$theme-secondary-color;
+
+// BUTTONS
+
+	$button-bg-color:$theme-primary-color;
+
+	$button-bg-hover:$theme-primary-color;
+
+// BLOCKQUOTE
+
+	$blockquote-border:none;
+	$blockquote-padding:none;

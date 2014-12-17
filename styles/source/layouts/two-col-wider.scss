@@ -1,0 +1,39 @@
+.two-col-wider {
+	
+	@include grid-row();
+
+	margin-bottom:$theme-normal-spacing;
+
+	.primary-area {
+
+		@media #{$small-only} {
+		
+			@include grid-column($columns:12);
+
+		}
+
+		@media #{$medium-up} {
+		
+			@include grid-column($columns:8);
+
+		}
+
+	}
+
+	.secondary-area {
+			
+		@media #{$small-only} {
+		
+			@include grid-column($columns:12);
+
+		}
+
+		@media #{$medium-up} {
+		
+			@include grid-column($columns:4);
+
+		}
+		
+	}
+
+}

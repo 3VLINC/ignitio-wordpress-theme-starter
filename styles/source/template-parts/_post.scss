@@ -1,0 +1,33 @@
+.post {
+	
+	@include grid-row();
+					
+	margin-bottom: $theme-large-spacing;
+	
+	.content--header {
+		
+		margin-bottom: $theme-normal-spacing;
+		
+	}
+	
+	h1 {
+		
+		font-size: $theme-font-size-very-large;
+		
+	}
+	
+	.content--meta {
+	
+		font-size: $theme-font-size-small;
+	
+		font-style: italic;
+	
+	}
+
+	.content--wrapper {
+
+		padding:$theme-normal-spacing;
+
+	}
+	
+}
