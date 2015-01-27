@@ -5341,6 +5341,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/screenshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23404,
+		"inputAbbreviatedPath": "\/screenshot.png",
+		"outputAbbreviatedPath": "\/screenshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/scripts\/compiled\/\n_typekit-init-min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -6082,12 +6093,12 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Andrés De Rojas",
+"lastSavedByUser": "Stephanie Carter",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Barker",
+	"displayValue": "Ignitio-starter-theme",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "harddrive_gray"
 	},
