@@ -44,25 +44,25 @@ $rem-base: $base-font-size;
 	
 // TOP BAR
 		
-	$topbar-bg-color: $theme-base-color;
+	$topbar-bg-color: transparent;
 	
 	$topbar-dropdown-link-bg: transparent;
 	
-	$topbar-link-color: $theme-base-inverse-color;
+	$topbar-link-color: $theme-subtle-color;
 
 	$topbar-link-color-hover: $theme-primary-color;
 	
-	$topbar-link-bg: transparent;
+	$topbar-link-bg: transparent ;
 
-	$topbar-link-padding:12px;
+	$topbar-link-padding:rem-calc(12);
 
-	$topbar-link-dropdown-padding:12px;
+	$topbar-link-dropdown-padding:rem-calc(12);
 
-	$topbar-link-font-family: $theme-secondary-font;
+	$topbar-link-font-family: $theme-primary-font;
 
 	$topbar-link-font-size:rem-calc(16);
 	
-	$topbar-height:75px;
+	$topbar-height:rem-calc(75);
 
 	$topbar-arrows: false;
 
@@ -74,9 +74,17 @@ $rem-base: $base-font-size;
 		
 	$topbar-link-bg-hover: transparent;
 
-	$topbar-menu-link-color-toggled:$theme-secondary-color;
+	$topbar-menu-link-color: $theme-primary-color;
 
-	$topbar-menu-icon-color-toggled:$theme-secondary-color;
+	$topbar-menu-icon-color: $theme-primary-color;
+
+	$topbar-menu-link-color-toggled: $theme-primary-color;
+
+	$topbar-menu-icon-color-toggled: $theme-primary-color;
+	
+	$topbar-divider-border-bottom: 1px solid $theme-primary-color;
+
+	$topbar-divider-border-top: 1px solid $theme-primary-color;
 
 // BUTTONS
 
