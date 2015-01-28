@@ -7,7 +7,7 @@ class Menus
 
     const MN_TOP_BAR = 'top-bar-menu';
     const MN_INTRO = 'intro-menu';
-    const MN_SOCIAL_MEDIA = 'social-media-menu';
+    const MN_SOCIAL_MEDIA = 'social-media';
 
 	public function __construct()
 	{
@@ -82,11 +82,11 @@ class Menus
         
             $url = get_theme_mod($handle);
 
-            if(!empty($url))
+            if(get_theme_mod($handle)!='http://')
             {
-
+            
                 $links[] = sprintf(
-                    '<li class="%s"><a href="%s"><span>%s</span></a></li>',
+                    '<li class="follow-us--link follow-us--link--%s"><a href="%s"><span>%s</span></a></li>',
                     $handle,
                     get_theme_mod($handle),
                     $name
@@ -96,13 +96,13 @@ class Menus
 
         }
 
-        printf('<ul id="%s">%s</ul>',
+        printf('<ul id="%s" class="follow-us">%s</ul>',
             self::getMenuID(self::MN_SOCIAL_MEDIA),
             implode($links)
         );
 
-    }
-
+    }	
+    
     public static function getMenuID($menu)
     {
         return $menu.'-menu';

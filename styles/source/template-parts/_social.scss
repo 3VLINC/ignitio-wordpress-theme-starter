@@ -1,0 +1,52 @@
+.follow-us {
+		
+	margin:0;
+	@extend .no-bullet;
+	@extend .clearfix;
+
+}
+
+.follow-us--link {
+	
+	float:left;
+	display: block;
+    margin-right: $theme-extra-small-spacing;
+	
+	span {
+		@include sr-only();
+	}
+
+}
+
+
+.follow-us--link--facebook a {
+	
+	@include retina-sprite(icon-facebook, sprites);
+
+}
+
+.follow-us--link--instagram a {
+	
+	@include retina-sprite(icon-instagram, sprites);
+
+}
+
+.follow-us--link--linkedin a {
+	
+	@include retina-sprite(icon-linkedin, sprites);
+
+}
+
+.follow-us--link--twitter a {
+	
+	@include retina-sprite(icon-twitter, sprites);
+
+}
+
+.follow-us--link--vimeo a {
+	
+	@include retina-sprite(icon-vimeo, sprites);
+
+}
+
+
