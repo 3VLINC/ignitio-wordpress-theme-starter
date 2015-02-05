@@ -4205,6 +4205,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1046,
+		"inputAbbreviatedPath": "\/images\/favicon.png",
+		"outputAbbreviatedPath": "\/images\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/source\/sprites\/hires\/icon-facebook.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5341,6 +5352,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/screenshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23404,
+		"inputAbbreviatedPath": "\/screenshot.png",
+		"outputAbbreviatedPath": "\/screenshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/scripts\/compiled\/\n_typekit-init-min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -5813,6 +5835,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/styles\/source\/template-parts\/_social.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/source\/template-parts\/_social.scss",
+		"outputAbbreviatedPath": "\/styles\/compiled\/_social.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/styles\/source\/templates\/_404.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -6082,12 +6120,12 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Andrés De Rojas",
+"lastSavedByUser": "Stephanie Carter",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Barker",
+	"displayValue": "Ignitio-starter-theme",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "harddrive_gray"
 	},
