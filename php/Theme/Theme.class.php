@@ -117,8 +117,11 @@ class Theme {
 
 			'facebook' => 'Facebook',
 			'twitter' => 'Twitter',
+			'linkedin' => 'LinkedIn',
 			'youtube' => 'YouTube',
-			'flickr' => 'Flickr'
+			'flickr' => 'Flickr',
+			'instagram' => 'Instagram',
+			'vimeo' => 'Vimeo',	
 			
 		);
 
