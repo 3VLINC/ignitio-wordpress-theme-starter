@@ -32,11 +32,17 @@
 		
 		<link rel="icon" href="<?php echo Theme::getResourceUrl('images/favicon.png'); ?>">
 		
-		<!-- For SVG icons. The SVG part of Modernizer can probably be moved over to the pre-existing Modernizer file  -->
+		<!-- For SVG icons from Foundation playground. The SVG part of Modernizer can probably be moved over to the pre-existing Modernizer file  -->
 		
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/fc-webicons.css" />
 
 		<script src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.foundation.js"></script>
+		
+		
+		<!-- For SVG icons from Iconic.com -->
+
+		<script src="<?php echo get_template_directory_uri(); ?>/scripts/iconic.min.js"></script>
+		
 		
 		<!--[if IE]>
 		
@@ -90,6 +96,8 @@
 				<?php Menus::outputMenu(Menus::MN_SOCIAL_MEDIA); ?>
 				
 			</section>
+			
+			<img data-src="<?php echo Theme::getResourceUrl('images/iconic-free-try-out/svg/smart/arrow-thick.svg'); ?>" data-direction="top-right" class="iconic iconic-md" alt="arrow-thick">
 
        	</header>
 
