@@ -79,16 +79,18 @@ class Menus
 
         foreach(Theme::getSocialMediaChannels() as $handle => $name)
         {
-        
+        	        	
             $url = get_theme_mod($handle);
 
-            if(get_theme_mod($handle)!='http://')
+            if($url!='http://' && $url!='')
             {
             
                 $links[] = sprintf(
-                    '<li class="follow-us--link follow-us--link--%s"><a href="%s"><span>%s</span></a></li>',
+                    
+                    '<li class="follow-us--link"><a href="%s" class="fc-webicon %s">%s</a></li>',
+                   
+                    $url,
                     $handle,
-                    get_theme_mod($handle),
                     $name
                 );
 

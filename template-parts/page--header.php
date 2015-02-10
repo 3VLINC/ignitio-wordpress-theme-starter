@@ -32,6 +32,12 @@
 		
 		<link rel="icon" href="<?php echo Theme::getResourceUrl('images/favicon.png'); ?>">
 		
+		<!-- For SVG icons. The SVG part of Modernizer can probably be moved over to the pre-existing Modernizer file  -->
+		
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/fc-webicons.css" />
+
+		<script src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.foundation.js"></script>
+		
 		<!--[if IE]>
 		
 			<link rel="shortcut icon" href="<?php echo Theme::getResourceUrl('images/favicon.ico'); ?>">
@@ -57,6 +63,7 @@
 		<header class="page--header fixed contain-to-grid">
 
 			<?php do_action(Actions::A_HEADER_PREPEND); ?>
+			
 
 			<nav class="top-bar page--header--top-bar" data-topbar>
 	            
@@ -77,6 +84,12 @@
             </nav>	
 
 	        <?php do_action(Actions::A_HEADER_APPEND); ?>
+	        
+	        <section class="page--header--social">
+			
+				<?php Menus::outputMenu(Menus::MN_SOCIAL_MEDIA); ?>
+				
+			</section>
 
        	</header>
 
