@@ -19,9 +19,10 @@
 							
 							foreach (Theme\Theme::getSocialMediaChannels() as $handle => $name){
 								
-								if(get_theme_mod($handle)!='http://'){
+								if(get_theme_mod($handle)!='http://' && get_theme_mod($handle)!=''){
 								
-									printf ('<li class="follow-us--link follow-us--link--%s"><a href="%s"><span>%s</span></a></li>', $handle, get_theme_mod($handle), $name);
+									printf ('<li class="follow-us--link"><a href="%s" class="fc-webicon %s">%s</a></li>', get_theme_mod($handle), $handle, $name);
+									
 									
 								}
 									
