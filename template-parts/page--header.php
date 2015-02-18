@@ -97,7 +97,7 @@
 				
 			</section>
 			
-			<img data-src="<?php echo Theme::getResourceUrl('images/iconic-free-try-out/svg/smart/arrow-thick.svg'); ?>" data-direction="top-right" class="iconic iconic-md" alt="arrow-thick">
+			<?php include('images/svg/instagram.svg'); ?>
 
        	</header>
 
