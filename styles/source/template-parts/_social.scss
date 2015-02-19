@@ -15,45 +15,30 @@
 	span {
 		@include sr-only();
 	}
-
-}
-
-#social-media-menu{
 	
 	svg{
 		width: 35px;
+		
+		.background{
+			fill: navy;
+		}
+		
+		.icon{
+			fill: $theme-base-color;
+		}
+		
+		&:hover, &:focus{
+			
+			.background{
+				fill: $theme-primary-color;
+			}
 
+		}
+		
 	}
+		
 }
 
-.follow-us--link--facebook a {
-	
-	@include retina-sprite(icon-facebook, sprites);
 
-}
-
-.follow-us--link--instagram a {
-	
-	@include retina-sprite(icon-instagram, sprites);
-
-}
-
-.follow-us--link--linkedin a {
-	
-	@include retina-sprite(icon-linkedin, sprites);
-
-}
-
-.follow-us--link--twitter a {
-	
-	@include retina-sprite(icon-twitter, sprites);
-
-}
-
-.follow-us--link--vimeo a {
-	
-	@include retina-sprite(icon-vimeo, sprites);
-
-}
 
 

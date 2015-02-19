@@ -2,7 +2,7 @@
 	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
 <g id="flickr">
 	<rect class="background" fill="#FFFFFF" width="499.5" height="499.5"/>
-	<circle class="circle-left" fill="#0063DC" cx="144.9" cy="251.8" r="92.5"/>
-	<circle class="circle-right" fill="#FF0084" cx="359.1" cy="251.8" r="92.5"/>
+	<circle class="icon circle-left" fill="#0063DC" cx="144.9" cy="251.8" r="92.5"/>
+	<circle class="icon circle-right" fill="#FF0084" cx="359.1" cy="251.8" r="92.5"/>
 </g>
 </svg>

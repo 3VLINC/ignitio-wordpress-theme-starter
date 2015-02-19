@@ -77,8 +77,6 @@ class Menus
     {
 
         $links = array();
-        
-         printf( '<ul id="%s" class="follow-us">',self::getMenuID(self::MN_SOCIAL_MEDIA) );
 
         foreach(Theme::getSocialMediaChannels() as $handle => $name)
         {
@@ -88,9 +86,10 @@ class Menus
             if($url!='http://' && $url!='')
             {
             	
-            	printf('<li class="follow-us--link"><a href="%s" class="%s">%s</a></li>', 
+            	$links[] = sprintf('<li class="follow-us--link"><a href="%s" class="%s"><span>%s</span>%s</a></li>', 
             		$url,
             		$handle,
+            		$name,
             		self::displaySvg($handle)
 				);
 
@@ -98,7 +97,10 @@ class Menus
 
         }
 
-       echo '</ul>';
+		printf( '<ul id="%s" class="follow-us">%s</ul>',
+			self::getMenuID(self::MN_SOCIAL_MEDIA),
+			implode($links) 
+		);
 
     }	
     
@@ -106,7 +108,15 @@ class Menus
 		
 		$svg_path = sprintf('images/svg/%s.svg',$handle);
 		
-		include(Theme::getResourcePath($svg_path));
+		ob_start();
+		
+			include(Theme::getResourcePath($svg_path));
+		
+			$svg = ob_get_contents();
+		
+		ob_end_clean();
+		
+		return $svg;
 	
 	} 
     
