@@ -1,5 +1,4 @@
-				
-			<?php do_action(Theme\Actions::A_MAIN_APPEND); ?>
+		<?php do_action(Theme\Actions::A_MAIN_APPEND); ?>
 
 		</main><!-- end #<?php echo Theme\Theme::getMainID(); ?> -->
 			
@@ -12,25 +11,8 @@
 				<?php Theme\WidgetAreas::outputWidgetArea(Theme\WidgetAreas::WA_FOOTER); ?>
 
 				<section class="contact-us">
-					
-					<ul class="follow-us">
-					
-						<?php
-							
-							foreach (Theme\Theme::getSocialMediaChannels() as $handle => $name){
-								
-								if(get_theme_mod($handle)!='http://' && get_theme_mod($handle)!=''){
-								
-									printf ('<li class="follow-us--link"><a href="%s" class="fc-webicon %s">%s</a></li>', get_theme_mod($handle), $handle, $name);
-									
-									
-								}
-									
-							}
-						
-						?>
-					
-					</ul>
+
+					<?php Theme\Menus::outputMenu(Theme\Menus::MN_SOCIAL_MEDIA); ?>
 
 				</section>
 	
