@@ -72,10 +72,13 @@ class Menus
 
     }
 
+	
     private static function outputSocialMediaMenu()
     {
 
         $links = array();
+        
+         printf( '<ul id="%s" class="follow-us">',self::getMenuID(self::MN_SOCIAL_MEDIA) );
 
         foreach(Theme::getSocialMediaChannels() as $handle => $name)
         {
@@ -84,26 +87,28 @@ class Menus
 
             if($url!='http://' && $url!='')
             {
-            
-                $links[] = sprintf(
-                    
-                    '<li class="follow-us--link"><a href="%s" class="fc-webicon %s">%s</a></li>',
-                   
-                    $url,
-                    $handle,
-                    $name
-                );
+            	
+            	printf('<li class="follow-us--link"><a href="%s" class="%s">%s</a></li>', 
+            		$url,
+            		$handle,
+            		self::displaySvg($handle)
+				);
 
             }
 
         }
 
-        printf('<ul id="%s" class="follow-us">%s</ul>',
-            self::getMenuID(self::MN_SOCIAL_MEDIA),
-            implode($links)
-        );
+       echo '</ul>';
 
     }	
+    
+    public static function displaySvg($handle){
+		
+		$svg_path = sprintf('images/svg/%s.svg',$handle);
+		
+		include(Theme::getResourcePath($svg_path));
+	
+	} 
     
     public static function getMenuID($menu)
     {

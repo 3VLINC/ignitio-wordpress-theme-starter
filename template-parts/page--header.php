@@ -96,8 +96,6 @@
 				<?php Menus::outputMenu(Menus::MN_SOCIAL_MEDIA); ?>
 				
 			</section>
-			
-			<?php include('images/svg/instagram.svg'); ?>
 
        	</header>
 
