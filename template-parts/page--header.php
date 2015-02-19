@@ -38,12 +38,6 @@
 
 		<script src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.foundation.js"></script>
 		
-		
-		<!-- For SVG icons from Iconic.com -->
-
-		<script src="<?php echo get_template_directory_uri(); ?>/scripts/iconic.min.js"></script>
-		
-		
 		<!--[if IE]>
 		
 			<link rel="shortcut icon" href="<?php echo Theme::getResourceUrl('images/favicon.ico'); ?>">
