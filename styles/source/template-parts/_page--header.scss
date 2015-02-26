@@ -9,16 +9,6 @@
 
 	margin:0 auto;
 
-	// Fix for top bar menu icon not toggling
-	&.expanded .toggle-topbar a span::after,
-	&.expanded .toggle-topbar a:hover span::after
-	{
-
-			box-shadow: 0 0px 0 1px $topbar-menu-icon-color-toggled,
-	                  0 7px 0 1px $topbar-menu-icon-color-toggled,
-			          0 14px 0 1px $topbar-menu-icon-color-toggled;
-	}
-
 }
 
 .page--header--logo {
