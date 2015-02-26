@@ -31,13 +31,7 @@
 		<link rel="apple-touch-icon" href="<?php echo Theme::getResourceUrl('images/apple-icon-touch.png'); ?>">
 		
 		<link rel="icon" href="<?php echo Theme::getResourceUrl('images/favicon.png'); ?>">
-		
-		<!-- For SVG icons from Foundation playground. The SVG part of Modernizer can probably be moved over to the pre-existing Modernizer file  -->
-		
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/fc-webicons.css" />
-
-		<script src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.foundation.js"></script>
-		
+				
 		<!--[if IE]>
 		
 			<link rel="shortcut icon" href="<?php echo Theme::getResourceUrl('images/favicon.ico'); ?>">
